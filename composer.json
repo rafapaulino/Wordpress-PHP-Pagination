@@ -1,5 +1,6 @@
 {
     "require": {
-        "php-pagination/php-pagination": "^2.0"
+        "php-pagination/php-pagination": "^2.0",
+        "twig/twig": "~2.0"
     }
 }

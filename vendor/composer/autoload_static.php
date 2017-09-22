@@ -6,7 +6,19 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit9c50bcc2d2af0716d1ebd7c080cbaf30
 {
+    public static $files = array (
+        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
+        'T' => 
+        array (
+            'Twig\\' => 5,
+        ),
+        'S' => 
+        array (
+            'Symfony\\Polyfill\\Mbstring\\' => 26,
+        ),
         'P' => 
         array (
             'Pagination\\' => 11,
@@ -14,9 +26,27 @@ class ComposerStaticInit9c50bcc2d2af0716d1ebd7c080cbaf30
     );
 
     public static $prefixDirsPsr4 = array (
+        'Twig\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/twig/twig/src',
+        ),
+        'Symfony\\Polyfill\\Mbstring\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
+        ),
         'Pagination\\' => 
         array (
             0 => __DIR__ . '/..' . '/php-pagination/php-pagination/src',
+        ),
+    );
+
+    public static $prefixesPsr0 = array (
+        'T' => 
+        array (
+            'Twig_' => 
+            array (
+                0 => __DIR__ . '/..' . '/twig/twig/lib',
+            ),
         ),
     );
 
@@ -34,6 +64,7 @@ class ComposerStaticInit9c50bcc2d2af0716d1ebd7c080cbaf30
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit9c50bcc2d2af0716d1ebd7c080cbaf30::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit9c50bcc2d2af0716d1ebd7c080cbaf30::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit9c50bcc2d2af0716d1ebd7c080cbaf30::$prefixesPsr0;
             $loader->classMap = ComposerStaticInit9c50bcc2d2af0716d1ebd7c080cbaf30::$classMap;
 
         }, null, ClassLoader::class);
